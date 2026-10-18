@@ -1,0 +1,1405 @@
+{
+  "synthetic_only": true,
+  "evaluation_level": "case-scoped runtime page chunks",
+  "method": "runtime make_chunks + retrieve(mode=keyword)",
+  "config": {
+    "keyword_min_score": 0.035,
+    "selected_from": "validation_cable, validation_bolt only",
+    "objective": "support passage coverage; fewer unsupported evidence hits; recall; stable default tie",
+    "chunking": "page-lines-700-overlap2-v1"
+  },
+  "validation_cases": 2,
+  "test_cases": 3,
+  "validation_candidates": [
+    {
+      "threshold": 0.035,
+      "metrics": {
+        "queries": 16,
+        "recall_at_5": 0.8,
+        "mrr": 0.65,
+        "gold_support_passage_coverage": 0.75,
+        "unanswerable_queries_with_evidence": 2,
+        "ambiguous_queries_requiring_clarification": 2,
+        "no_key_abstentions": 16,
+        "rows": [
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "How many wire were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Who is the supplier Fern Supply?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_bolt",
+            "query": "How many fasteners were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Who is the supplier Birch Works?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.02,
+      "metrics": {
+        "queries": 16,
+        "recall_at_5": 0.8,
+        "mrr": 0.65,
+        "gold_support_passage_coverage": 0.75,
+        "unanswerable_queries_with_evidence": 2,
+        "ambiguous_queries_requiring_clarification": 2,
+        "no_key_abstentions": 16,
+        "rows": [
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "How many wire were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Who is the supplier Fern Supply?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_bolt",
+            "query": "How many fasteners were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Who is the supplier Birch Works?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.06,
+      "metrics": {
+        "queries": 16,
+        "recall_at_5": 0.8,
+        "mrr": 0.65,
+        "gold_support_passage_coverage": 0.75,
+        "unanswerable_queries_with_evidence": 2,
+        "ambiguous_queries_requiring_clarification": 2,
+        "no_key_abstentions": 16,
+        "rows": [
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "How many wire were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Who is the supplier Fern Supply?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_bolt",
+            "query": "How many fasteners were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Who is the supplier Birch Works?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.1,
+      "metrics": {
+        "queries": 16,
+        "recall_at_5": 0.8,
+        "mrr": 0.65,
+        "gold_support_passage_coverage": 0.75,
+        "unanswerable_queries_with_evidence": 2,
+        "ambiguous_queries_requiring_clarification": 2,
+        "no_key_abstentions": 16,
+        "rows": [
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "How many wire were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Who is the supplier Fern Supply?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_bolt",
+            "query": "How many fasteners were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Who is the supplier Birch Works?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "threshold": 0.16,
+      "metrics": {
+        "queries": 16,
+        "recall_at_5": 0.7,
+        "mrr": 0.6,
+        "gold_support_passage_coverage": 0.625,
+        "unanswerable_queries_with_evidence": 0,
+        "ambiguous_queries_requiring_clarification": 2,
+        "no_key_abstentions": 16,
+        "rows": [
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Copper cable quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_cable",
+            "query": "How many wire were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Who is the supplier Fern Supply?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page1:chunk0",
+              "validation_cable:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_cable:target:page1:chunk0",
+              "validation_cable:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_cable:reference:page2:chunk3",
+              "validation_cable:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_cable",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity purchase order",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Steel bolt M8 quantity invoice",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 0.5
+          },
+          {
+            "case": "validation_bolt",
+            "query": "How many fasteners were billed?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [],
+            "recall_at_5": 0.0,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Who is the supplier Birch Works?",
+            "support_label": "answerable",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page1:chunk0",
+              "validation_bolt:target:page1:chunk0"
+            ],
+            "returned_ids": [
+              "validation_bolt:target:page1:chunk0",
+              "validation_bolt:reference:page1:chunk0"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the unit price?",
+            "support_label": "ambiguous",
+            "gold_chunk_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "returned_ids": [
+              "validation_bolt:reference:page2:chunk3",
+              "validation_bolt:target:page2:chunk3"
+            ],
+            "recall_at_5": 1.0,
+            "reciprocal_rank": 1.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "What is the supplier bank IBAN?",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Warranty expiry date",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          },
+          {
+            "case": "validation_bolt",
+            "query": "Shipment tracking AWB",
+            "support_label": "unanswerable",
+            "gold_chunk_ids": [],
+            "returned_ids": [],
+            "recall_at_5": null,
+            "reciprocal_rank": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "test": {
+    "queries": 24,
+    "recall_at_5": 0.8,
+    "mrr": 0.6,
+    "gold_support_passage_coverage": 0.75,
+    "unanswerable_queries_with_evidence": 3,
+    "ambiguous_queries_requiring_clarification": 3,
+    "no_key_abstentions": 24,
+    "rows": [
+      {
+        "case": "test_ink",
+        "query": "Printer ink quantity purchase order",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_ink:reference:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_ink:reference:page1:chunk0",
+          "test_ink:reference:page2:chunk3",
+          "test_ink:target:page2:chunk3",
+          "test_ink:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_ink",
+        "query": "Printer ink quantity invoice",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_ink:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_ink:reference:page2:chunk3",
+          "test_ink:target:page2:chunk3",
+          "test_ink:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_ink",
+        "query": "How many printing liquid were billed?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_ink:target:page2:chunk3"
+        ],
+        "returned_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_ink",
+        "query": "Who is the supplier Maple Supply?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_ink:reference:page1:chunk0",
+          "test_ink:target:page1:chunk0"
+        ],
+        "returned_ids": [
+          "test_ink:target:page1:chunk0",
+          "test_ink:reference:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_ink",
+        "query": "What is the unit price?",
+        "support_label": "ambiguous",
+        "gold_chunk_ids": [
+          "test_ink:reference:page2:chunk3",
+          "test_ink:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_ink:reference:page2:chunk3",
+          "test_ink:target:page2:chunk3"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_ink",
+        "query": "What is the supplier bank IBAN?",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [
+          "test_ink:target:page1:chunk0",
+          "test_ink:reference:page1:chunk0"
+        ],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_ink",
+        "query": "Warranty expiry date",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_ink",
+        "query": "Shipment tracking AWB",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_safety",
+        "query": "Safety glove quantity purchase order",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_safety:reference:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_safety:reference:page1:chunk0",
+          "test_safety:reference:page2:chunk3",
+          "test_safety:target:page2:chunk3",
+          "test_safety:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_safety",
+        "query": "Safety glove quantity invoice",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_safety:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_safety:reference:page2:chunk3",
+          "test_safety:target:page2:chunk3",
+          "test_safety:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_safety",
+        "query": "How many hand protection were billed?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_safety:target:page2:chunk3"
+        ],
+        "returned_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_safety",
+        "query": "Who is the supplier Willow Trading?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_safety:reference:page1:chunk0",
+          "test_safety:target:page1:chunk0"
+        ],
+        "returned_ids": [
+          "test_safety:target:page1:chunk0",
+          "test_safety:reference:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_safety",
+        "query": "What is the unit price?",
+        "support_label": "ambiguous",
+        "gold_chunk_ids": [
+          "test_safety:reference:page2:chunk3",
+          "test_safety:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_safety:reference:page2:chunk3",
+          "test_safety:target:page2:chunk3"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_safety",
+        "query": "What is the supplier bank IBAN?",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [
+          "test_safety:target:page1:chunk0",
+          "test_safety:reference:page1:chunk0"
+        ],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_safety",
+        "query": "Warranty expiry date",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_safety",
+        "query": "Shipment tracking AWB",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_crate",
+        "query": "Wooden crate quantity purchase order",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_crate:reference:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_crate:reference:page1:chunk0",
+          "test_crate:reference:page2:chunk3",
+          "test_crate:target:page2:chunk3",
+          "test_crate:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_crate",
+        "query": "Wooden crate quantity invoice",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_crate:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_crate:reference:page2:chunk3",
+          "test_crate:target:page2:chunk3",
+          "test_crate:target:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 0.5
+      },
+      {
+        "case": "test_crate",
+        "query": "How many shipping box were billed?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_crate:target:page2:chunk3"
+        ],
+        "returned_ids": [],
+        "recall_at_5": 0.0,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_crate",
+        "query": "Who is the supplier Cedar Works?",
+        "support_label": "answerable",
+        "gold_chunk_ids": [
+          "test_crate:reference:page1:chunk0",
+          "test_crate:target:page1:chunk0"
+        ],
+        "returned_ids": [
+          "test_crate:target:page1:chunk0",
+          "test_crate:reference:page1:chunk0"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_crate",
+        "query": "What is the unit price?",
+        "support_label": "ambiguous",
+        "gold_chunk_ids": [
+          "test_crate:reference:page2:chunk3",
+          "test_crate:target:page2:chunk3"
+        ],
+        "returned_ids": [
+          "test_crate:reference:page2:chunk3",
+          "test_crate:target:page2:chunk3"
+        ],
+        "recall_at_5": 1.0,
+        "reciprocal_rank": 1.0
+      },
+      {
+        "case": "test_crate",
+        "query": "What is the supplier bank IBAN?",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [
+          "test_crate:target:page1:chunk0",
+          "test_crate:reference:page1:chunk0"
+        ],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_crate",
+        "query": "Warranty expiry date",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      },
+      {
+        "case": "test_crate",
+        "query": "Shipment tracking AWB",
+        "support_label": "unanswerable",
+        "gold_chunk_ids": [],
+        "returned_ids": [],
+        "recall_at_5": null,
+        "reciprocal_rank": 0.0
+      }
+    ]
+  },
+  "limitation": "Support coverage tests gold labelled passages, not generated-answer entailment. No-key mode abstains on every query, including supported ones. No live embedding/provider quality is claimed."
+}

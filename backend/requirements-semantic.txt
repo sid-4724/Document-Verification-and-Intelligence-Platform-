@@ -1,0 +1,2 @@
+# Optional CPU semantic retrieval. Keep this out of the core image.
+sentence-transformers==5.1.2

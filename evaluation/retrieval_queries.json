@@ -1,0 +1,58 @@
+[
+  {
+    "query": "PO-1001 purchase order",
+    "relevant_files": [
+      "matching_po.pdf",
+      "quantity_po.pdf",
+      "price_po.pdf",
+      "both_po.pdf",
+      "arithmetic_po.pdf",
+      "incomplete_po.pdf",
+      "incompatible_po.pdf"
+    ]
+  },
+  {
+    "query": "INV-2001 invoice",
+    "relevant_files": [
+      "matching_invoice.pdf",
+      "quantity_invoice.pdf",
+      "price_invoice.pdf",
+      "both_invoice.pdf",
+      "arithmetic_invoice.pdf",
+      "incompatible_invoice.pdf"
+    ]
+  },
+  {
+    "query": "QT-3001 supplier quotation",
+    "relevant_files": [
+      "sample_quotation.pdf"
+    ]
+  },
+  {
+    "query": "Cable connector CON-02",
+    "relevant_files": [
+      "arithmetic_po.pdf"
+    ]
+  },
+  {
+    "query": "Currency USD",
+    "relevant_files": [
+      "incompatible_invoice.pdf"
+    ]
+  },
+  {
+    "query": "What is the supplier bank IBAN?",
+    "relevant_files": [],
+    "unanswerable": true
+  },
+  {
+    "query": "Warranty expiration date",
+    "relevant_files": [],
+    "unanswerable": true
+  },
+  {
+    "query": "Shipment tracking AWB",
+    "relevant_files": [],
+    "unanswerable": true
+  }
+]

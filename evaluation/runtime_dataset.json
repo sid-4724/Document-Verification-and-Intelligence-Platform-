@@ -1,0 +1,801 @@
+{
+  "synthetic_only": true,
+  "label_policy": "Document/page/fragment labels determine gold runtime chunk IDs. Ambiguous price queries require clarification; no support is inferred from shared words.",
+  "cases": [
+    {
+      "case_id": "validation_cable",
+      "split": "validation",
+      "chunks": [
+        {
+          "page": 1,
+          "text": "PURCHASE ORDER\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: reference\nOrder reference: validation_cable\nSupplier: Fern Supply\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_cable:reference:page1:chunk0",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "validation_cable:reference:page1:chunk1",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "validation_cable:reference:page1:chunk2",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Copper cable | 100 | pcs | 80 | 8000\nSubtotal: 8000\nTax: 0\nTotal: 8000\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_cable:reference:page2:chunk3",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "validation_cable:reference:page2:chunk4",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "INVOICE\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: target\nOrder reference: validation_cable\nSupplier: Fern Supply\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_cable:target:page1:chunk0",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "validation_cable:target:page1:chunk1",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "validation_cable:target:page1:chunk2",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Copper cable | 120 | pcs | 80 | 9600\nSubtotal: 9600\nTax: 0\nTotal: 9600\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_cable:target:page2:chunk3",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "validation_cable:target:page2:chunk4",
+          "document_id": "target",
+          "filename": "target.pdf"
+        }
+      ],
+      "queries": [
+        {
+          "query": "Copper cable quantity purchase order",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Copper cable | 100 | pcs | 80 | 8000"
+            }
+          ]
+        },
+        {
+          "query": "Copper cable quantity invoice",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Copper cable | 120 | pcs | 80 | 9600"
+            }
+          ]
+        },
+        {
+          "query": "How many wire were billed?",
+          "support": "answerable",
+          "paraphrase": true,
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Copper cable | 120 | pcs | 80 | 9600"
+            }
+          ]
+        },
+        {
+          "query": "Who is the supplier Fern Supply?",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 1,
+              "fragment": "Supplier: Fern Supply"
+            },
+            {
+              "document_id": "target",
+              "page": 1,
+              "fragment": "Supplier: Fern Supply"
+            }
+          ]
+        },
+        {
+          "query": "What is the unit price?",
+          "support": "ambiguous",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Copper cable | 100 | pcs | 80 | 8000"
+            },
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Copper cable | 120 | pcs | 80 | 9600"
+            }
+          ]
+        },
+        {
+          "query": "What is the supplier bank IBAN?",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Warranty expiry date",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Shipment tracking AWB",
+          "support": "unanswerable",
+          "relevant": []
+        }
+      ]
+    },
+    {
+      "case_id": "validation_bolt",
+      "split": "validation",
+      "chunks": [
+        {
+          "page": 1,
+          "text": "PURCHASE ORDER\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: reference\nOrder reference: validation_bolt\nSupplier: Birch Works\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:reference:page1:chunk0",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:reference:page1:chunk1",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:reference:page1:chunk2",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Steel bolt M8 | 20 | pcs | 3 | 60\nSubtotal: 60\nTax: 0\nTotal: 60\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:reference:page2:chunk3",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:reference:page2:chunk4",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "INVOICE\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: target\nOrder reference: validation_bolt\nSupplier: Birch Works\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:target:page1:chunk0",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:target:page1:chunk1",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:target:page1:chunk2",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Steel bolt M8 | 25 | pcs | 3 | 75\nSubtotal: 75\nTax: 0\nTotal: 75\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:target:page2:chunk3",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "validation_bolt:target:page2:chunk4",
+          "document_id": "target",
+          "filename": "target.pdf"
+        }
+      ],
+      "queries": [
+        {
+          "query": "Steel bolt M8 quantity purchase order",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Steel bolt M8 | 20 | pcs | 3 | 60"
+            }
+          ]
+        },
+        {
+          "query": "Steel bolt M8 quantity invoice",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Steel bolt M8 | 25 | pcs | 3 | 75"
+            }
+          ]
+        },
+        {
+          "query": "How many fasteners were billed?",
+          "support": "answerable",
+          "paraphrase": true,
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Steel bolt M8 | 25 | pcs | 3 | 75"
+            }
+          ]
+        },
+        {
+          "query": "Who is the supplier Birch Works?",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 1,
+              "fragment": "Supplier: Birch Works"
+            },
+            {
+              "document_id": "target",
+              "page": 1,
+              "fragment": "Supplier: Birch Works"
+            }
+          ]
+        },
+        {
+          "query": "What is the unit price?",
+          "support": "ambiguous",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Steel bolt M8 | 20 | pcs | 3 | 60"
+            },
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Steel bolt M8 | 25 | pcs | 3 | 75"
+            }
+          ]
+        },
+        {
+          "query": "What is the supplier bank IBAN?",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Warranty expiry date",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Shipment tracking AWB",
+          "support": "unanswerable",
+          "relevant": []
+        }
+      ]
+    },
+    {
+      "case_id": "test_ink",
+      "split": "test",
+      "chunks": [
+        {
+          "page": 1,
+          "text": "PURCHASE ORDER\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: reference\nOrder reference: test_ink\nSupplier: Maple Supply\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_ink:reference:page1:chunk0",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_ink:reference:page1:chunk1",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_ink:reference:page1:chunk2",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Printer ink | 12 | pcs | 40 | 480\nSubtotal: 480\nTax: 0\nTotal: 480\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_ink:reference:page2:chunk3",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_ink:reference:page2:chunk4",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "INVOICE\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: target\nOrder reference: test_ink\nSupplier: Maple Supply\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_ink:target:page1:chunk0",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_ink:target:page1:chunk1",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_ink:target:page1:chunk2",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Printer ink | 15 | pcs | 40 | 600\nSubtotal: 600\nTax: 0\nTotal: 600\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_ink:target:page2:chunk3",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_ink:target:page2:chunk4",
+          "document_id": "target",
+          "filename": "target.pdf"
+        }
+      ],
+      "queries": [
+        {
+          "query": "Printer ink quantity purchase order",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Printer ink | 12 | pcs | 40 | 480"
+            }
+          ]
+        },
+        {
+          "query": "Printer ink quantity invoice",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Printer ink | 15 | pcs | 40 | 600"
+            }
+          ]
+        },
+        {
+          "query": "How many printing liquid were billed?",
+          "support": "answerable",
+          "paraphrase": true,
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Printer ink | 15 | pcs | 40 | 600"
+            }
+          ]
+        },
+        {
+          "query": "Who is the supplier Maple Supply?",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 1,
+              "fragment": "Supplier: Maple Supply"
+            },
+            {
+              "document_id": "target",
+              "page": 1,
+              "fragment": "Supplier: Maple Supply"
+            }
+          ]
+        },
+        {
+          "query": "What is the unit price?",
+          "support": "ambiguous",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Printer ink | 12 | pcs | 40 | 480"
+            },
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Printer ink | 15 | pcs | 40 | 600"
+            }
+          ]
+        },
+        {
+          "query": "What is the supplier bank IBAN?",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Warranty expiry date",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Shipment tracking AWB",
+          "support": "unanswerable",
+          "relevant": []
+        }
+      ]
+    },
+    {
+      "case_id": "test_safety",
+      "split": "test",
+      "chunks": [
+        {
+          "page": 1,
+          "text": "PURCHASE ORDER\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: reference\nOrder reference: test_safety\nSupplier: Willow Trading\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_safety:reference:page1:chunk0",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_safety:reference:page1:chunk1",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_safety:reference:page1:chunk2",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Safety glove | 30 | pcs | 9 | 270\nSubtotal: 270\nTax: 0\nTotal: 270\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_safety:reference:page2:chunk3",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_safety:reference:page2:chunk4",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "INVOICE\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: target\nOrder reference: test_safety\nSupplier: Willow Trading\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_safety:target:page1:chunk0",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_safety:target:page1:chunk1",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_safety:target:page1:chunk2",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Safety glove | 40 | pcs | 9 | 360\nSubtotal: 360\nTax: 0\nTotal: 360\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_safety:target:page2:chunk3",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_safety:target:page2:chunk4",
+          "document_id": "target",
+          "filename": "target.pdf"
+        }
+      ],
+      "queries": [
+        {
+          "query": "Safety glove quantity purchase order",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Safety glove | 30 | pcs | 9 | 270"
+            }
+          ]
+        },
+        {
+          "query": "Safety glove quantity invoice",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Safety glove | 40 | pcs | 9 | 360"
+            }
+          ]
+        },
+        {
+          "query": "How many hand protection were billed?",
+          "support": "answerable",
+          "paraphrase": true,
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Safety glove | 40 | pcs | 9 | 360"
+            }
+          ]
+        },
+        {
+          "query": "Who is the supplier Willow Trading?",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 1,
+              "fragment": "Supplier: Willow Trading"
+            },
+            {
+              "document_id": "target",
+              "page": 1,
+              "fragment": "Supplier: Willow Trading"
+            }
+          ]
+        },
+        {
+          "query": "What is the unit price?",
+          "support": "ambiguous",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Safety glove | 30 | pcs | 9 | 270"
+            },
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Safety glove | 40 | pcs | 9 | 360"
+            }
+          ]
+        },
+        {
+          "query": "What is the supplier bank IBAN?",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Warranty expiry date",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Shipment tracking AWB",
+          "support": "unanswerable",
+          "relevant": []
+        }
+      ]
+    },
+    {
+      "case_id": "test_crate",
+      "split": "test",
+      "chunks": [
+        {
+          "page": 1,
+          "text": "PURCHASE ORDER\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: reference\nOrder reference: test_crate\nSupplier: Cedar Works\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_crate:reference:page1:chunk0",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_crate:reference:page1:chunk1",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_crate:reference:page1:chunk2",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Wooden crate | 8 | pcs | 50 | 400\nSubtotal: 400\nTax: 0\nTotal: 400\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_crate:reference:page2:chunk3",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_crate:reference:page2:chunk4",
+          "document_id": "reference",
+          "filename": "reference.pdf"
+        },
+        {
+          "page": 1,
+          "text": "INVOICE\nSYNTHETIC SAMPLE - FICTIONAL DATA\nDocument number: target\nOrder reference: test_crate\nSupplier: Cedar Works\nCustomer: Fictional Evaluation Studio\nCurrency: INR\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_crate:target:page1:chunk0",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.\nFictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.",
+          "id": "test_crate:target:page1:chunk1",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 1,
+          "text": "Fictional administrative note 12: inspection scheduling and packaging details only.\nFictional administrative note 13: inspection scheduling and packaging details only.\nFictional administrative note 14: inspection scheduling and packaging details only.\nFictional administrative note 15: inspection scheduling and packaging details only.\nFictional administrative note 16: inspection scheduling and packaging details only.\nFictional administrative note 17: inspection scheduling and packaging details only.",
+          "id": "test_crate:target:page1:chunk2",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "SYNTHETIC SAMPLE - FICTIONAL LINE DETAILS\nSKU | Description | Quantity | Unit | Unit price | Amount\nITEM-01 | Wooden crate | 10 | pcs | 50 | 500\nSubtotal: 500\nTax: 0\nTotal: 500\nFictional administrative note 0: inspection scheduling and packaging details only.\nFictional administrative note 1: inspection scheduling and packaging details only.\nFictional administrative note 2: inspection scheduling and packaging details only.\nFictional administrative note 3: inspection scheduling and packaging details only.\nFictional administrative note 4: inspection scheduling and packaging details only.\nFictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.",
+          "id": "test_crate:target:page2:chunk3",
+          "document_id": "target",
+          "filename": "target.pdf"
+        },
+        {
+          "page": 2,
+          "text": "Fictional administrative note 5: inspection scheduling and packaging details only.\nFictional administrative note 6: inspection scheduling and packaging details only.\nFictional administrative note 7: inspection scheduling and packaging details only.\nFictional administrative note 8: inspection scheduling and packaging details only.\nFictional administrative note 9: inspection scheduling and packaging details only.\nFictional administrative note 10: inspection scheduling and packaging details only.\nFictional administrative note 11: inspection scheduling and packaging details only.",
+          "id": "test_crate:target:page2:chunk4",
+          "document_id": "target",
+          "filename": "target.pdf"
+        }
+      ],
+      "queries": [
+        {
+          "query": "Wooden crate quantity purchase order",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Wooden crate | 8 | pcs | 50 | 400"
+            }
+          ]
+        },
+        {
+          "query": "Wooden crate quantity invoice",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Wooden crate | 10 | pcs | 50 | 500"
+            }
+          ]
+        },
+        {
+          "query": "How many shipping box were billed?",
+          "support": "answerable",
+          "paraphrase": true,
+          "relevant": [
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Wooden crate | 10 | pcs | 50 | 500"
+            }
+          ]
+        },
+        {
+          "query": "Who is the supplier Cedar Works?",
+          "support": "answerable",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 1,
+              "fragment": "Supplier: Cedar Works"
+            },
+            {
+              "document_id": "target",
+              "page": 1,
+              "fragment": "Supplier: Cedar Works"
+            }
+          ]
+        },
+        {
+          "query": "What is the unit price?",
+          "support": "ambiguous",
+          "relevant": [
+            {
+              "document_id": "reference",
+              "page": 2,
+              "fragment": "ITEM-01 | Wooden crate | 8 | pcs | 50 | 400"
+            },
+            {
+              "document_id": "target",
+              "page": 2,
+              "fragment": "ITEM-01 | Wooden crate | 10 | pcs | 50 | 500"
+            }
+          ]
+        },
+        {
+          "query": "What is the supplier bank IBAN?",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Warranty expiry date",
+          "support": "unanswerable",
+          "relevant": []
+        },
+        {
+          "query": "Shipment tracking AWB",
+          "support": "unanswerable",
+          "relevant": []
+        }
+      ]
+    }
+  ]
+}

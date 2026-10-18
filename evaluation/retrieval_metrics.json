@@ -1,0 +1,89 @@
+{
+  "evaluation_level": "historical document-level synthetic baseline (whole PDF text)",
+  "synthetic_only": true,
+  "method": "TF-IDF unigram/bigram cosine similarity",
+  "documents": 15,
+  "queries": 8,
+  "answerable_queries": 5,
+  "recall_at_5": 0.9095238095238095,
+  "mrr": 1.0,
+  "unanswerable_queries_with_hits": 2,
+  "rows": [
+    {
+      "query": "PO-1001 purchase order",
+      "recall_at_5": 0.7142857142857143,
+      "reciprocal_rank": 1.0,
+      "top_5": [
+        "matching_po.pdf",
+        "both_po.pdf",
+        "incompatible_po.pdf",
+        "price_po.pdf",
+        "incomplete_po.pdf"
+      ]
+    },
+    {
+      "query": "INV-2001 invoice",
+      "recall_at_5": 0.8333333333333334,
+      "reciprocal_rank": 1.0,
+      "top_5": [
+        "matching_invoice.pdf",
+        "price_invoice.pdf",
+        "incompatible_invoice.pdf",
+        "arithmetic_invoice.pdf",
+        "quantity_invoice.pdf"
+      ]
+    },
+    {
+      "query": "QT-3001 supplier quotation",
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "top_5": [
+        "sample_quotation.pdf"
+      ]
+    },
+    {
+      "query": "Cable connector CON-02",
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "top_5": [
+        "arithmetic_po.pdf"
+      ]
+    },
+    {
+      "query": "Currency USD",
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "top_5": [
+        "incompatible_invoice.pdf"
+      ]
+    },
+    {
+      "query": "What is the supplier bank IBAN?",
+      "unanswerable": true,
+      "returned_evidence": [
+        "sample_quotation.pdf",
+        "matching_po.pdf",
+        "both_po.pdf",
+        "incompatible_po.pdf",
+        "incomplete_invoice.pdf"
+      ]
+    },
+    {
+      "query": "Warranty expiration date",
+      "unanswerable": true,
+      "returned_evidence": [
+        "matching_po.pdf",
+        "both_po.pdf",
+        "incompatible_po.pdf",
+        "incomplete_invoice.pdf",
+        "price_po.pdf"
+      ]
+    },
+    {
+      "query": "Shipment tracking AWB",
+      "unanswerable": true,
+      "returned_evidence": []
+    }
+  ],
+  "limitation": "Retrieval relevance does not prove answerability. Unanswerable queries may share words and return passages; no-key mode never generates an answer."
+}

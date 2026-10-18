@@ -1,0 +1,60 @@
+{
+  "synthetic_only": true,
+  "seed": 42,
+  "dataset_size": 720,
+  "train_size": 480,
+  "test_size": 240,
+  "train_families": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "test_families": [
+    4,
+    5
+  ],
+  "labels": [
+    "purchase_order",
+    "quotation",
+    "invoice"
+  ],
+  "feature_configuration": "Unigram/bigram TF-IDF with first-line heading repeated 10 times, sublinear TF, logistic C=1.0",
+  "tfidf_logistic_macro_f1": 1.0,
+  "keyword_macro_f1": 1.0,
+  "confusion_matrix": [
+    [
+      80,
+      0,
+      0
+    ],
+    [
+      0,
+      80,
+      0
+    ],
+    [
+      0,
+      0,
+      80
+    ]
+  ],
+  "keyword_confusion_matrix": [
+    [
+      80,
+      0,
+      0
+    ],
+    [
+      0,
+      80,
+      0
+    ],
+    [
+      0,
+      0,
+      80
+    ]
+  ],
+  "limitation": "Entire templates are held out, but headings and class-specific phrasing repeat. This toy synthetic task does not establish real-world accuracy."
+}

@@ -1,0 +1,510 @@
+{
+  "synthetic": true,
+  "layout_families": [
+    "pipe",
+    "table",
+    "cards"
+  ],
+  "cases": [
+    {
+      "name": "01 \u00b7 Matching order & invoice",
+      "files": [
+        "matching_po.pdf",
+        "matching_invoice.pdf"
+      ],
+      "expected_finding_types": []
+    },
+    {
+      "name": "02 \u00b7 Quantity difference",
+      "files": [
+        "quantity_po.pdf",
+        "quantity_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "quantity_difference",
+        "subtotal_difference"
+      ]
+    },
+    {
+      "name": "03 \u00b7 Unit-price difference",
+      "files": [
+        "price_po.pdf",
+        "price_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "unit_price_difference",
+        "subtotal_difference"
+      ]
+    },
+    {
+      "name": "04 \u00b7 Quantity + price (INR 2,200)",
+      "files": [
+        "both_po.pdf",
+        "both_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "quantity_difference",
+        "unit_price_difference",
+        "subtotal_difference"
+      ]
+    },
+    {
+      "name": "05 \u00b7 Arithmetic error & missing item",
+      "files": [
+        "arithmetic_po.pdf",
+        "arithmetic_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "arithmetic_error",
+        "missing_item",
+        "subtotal_difference"
+      ]
+    },
+    {
+      "name": "06 \u00b7 Incomplete & ambiguous data",
+      "files": [
+        "incomplete_po.pdf",
+        "incomplete_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "extraction_uncertainty",
+        "missing_identifier",
+        "ambiguous_match"
+      ]
+    },
+    {
+      "name": "07 \u00b7 Currency & unit incompatibility",
+      "files": [
+        "incompatible_po.pdf",
+        "incompatible_invoice.pdf"
+      ],
+      "expected_finding_types": [
+        "currency_incompatible",
+        "unit_incompatible"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "file": "matching_po.pdf",
+      "family": "pipe",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "matching_invoice.pdf",
+      "family": "table",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "quantity_po.pdf",
+      "family": "table",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "quantity_invoice.pdf",
+      "family": "cards",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "120",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "9600"
+          }
+        ],
+        "subtotal": "9600",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "9600"
+      }
+    },
+    {
+      "file": "price_po.pdf",
+      "family": "cards",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "price_invoice.pdf",
+      "family": "pipe",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "85",
+            "amount": "8500"
+          }
+        ],
+        "subtotal": "8500",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8500"
+      }
+    },
+    {
+      "file": "both_po.pdf",
+      "family": "pipe",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "both_invoice.pdf",
+      "family": "table",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "120",
+            "unit": "m",
+            "unit_price": "85",
+            "amount": "10200"
+          }
+        ],
+        "subtotal": "10200",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "10200"
+      }
+    },
+    {
+      "file": "arithmetic_po.pdf",
+      "family": "table",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          },
+          {
+            "sku": "CON-02",
+            "description": "Cable connector",
+            "quantity": "10",
+            "unit": "pcs",
+            "unit_price": "20",
+            "amount": "200"
+          }
+        ],
+        "subtotal": "8200",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8200"
+      }
+    },
+    {
+      "file": "arithmetic_invoice.pdf",
+      "family": "cards",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8100"
+          }
+        ],
+        "subtotal": "8100",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8100"
+      }
+    },
+    {
+      "file": "incomplete_po.pdf",
+      "family": "cards",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "incomplete_invoice.pdf",
+      "family": "pipe",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": null,
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": null,
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          },
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": null,
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "incompatible_po.pdf",
+      "family": "pipe",
+      "expected": {
+        "document_type": "purchase_order",
+        "document_number": "PO-1001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "incompatible_invoice.pdf",
+      "family": "table",
+      "expected": {
+        "document_type": "invoice",
+        "document_number": "INV-2001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "USD",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "pcs",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    },
+    {
+      "file": "sample_quotation.pdf",
+      "family": "cards",
+      "expected": {
+        "document_type": "quotation",
+        "document_number": "QT-3001",
+        "order_reference": "ORDER-001",
+        "supplier": "Copperleaf Supply (Fictional)",
+        "customer": "Northstar Labs (Fictional)",
+        "currency": "INR",
+        "date": "2026-01-15",
+        "line_items": [
+          {
+            "sku": "CBL-01",
+            "description": "Copper cable",
+            "quantity": "100",
+            "unit": "m",
+            "unit_price": "80",
+            "amount": "8000"
+          }
+        ],
+        "subtotal": "8000",
+        "tax": "0",
+        "tax_rate": "0",
+        "total": "8000"
+      }
+    }
+  ]
+}

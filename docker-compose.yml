@@ -1,0 +1,73 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: docverify
+      POSTGRES_USER: docverify
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docverify_local}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docverify -d docverify"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: &backend_environment
+      DATABASE_URL: postgresql+psycopg://docverify:${POSTGRES_PASSWORD:-docverify_local}@db:5432/docverify
+      STORAGE_DIR: /data/uploads
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:3000}
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      DEMO_MODE: ${DEMO_MODE:-true}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-4-5}
+      SEMANTIC_ENABLED: ${SEMANTIC_ENABLED:-false}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      EMBEDDING_LOCAL_ONLY: ${EMBEDDING_LOCAL_ONLY:-true}
+      EMBEDDING_REVISION: ${EMBEDDING_REVISION:-}
+      KEYWORD_MIN_SCORE: ${KEYWORD_MIN_SCORE:-0.035}
+      SEMANTIC_MIN_SCORE: ${SEMANTIC_MIN_SCORE:-0.3}
+      MAX_FILE_MB: ${MAX_FILE_MB:-10}
+      MAX_PAGES: ${MAX_PAGES:-30}
+      JOB_LEASE_SECONDS: ${JOB_LEASE_SECONDS:-300}
+      JOB_MAX_ATTEMPTS: ${JOB_MAX_ATTEMPTS:-3}
+    command: ["sh", "-c", "alembic -c backend/alembic.ini upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    volumes:
+      - uploads:/data/uploads
+      - model_cache:/data/models
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  worker:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment: *backend_environment
+    command: ["python", "-m", "app.worker"]
+    volumes:
+      - uploads:/data/uploads
+      - model_cache:/data/models
+    depends_on:
+      backend:
+        condition: service_healthy
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:${WEB_PORT:-3000}:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  postgres_data:
+  uploads:
+  model_cache:

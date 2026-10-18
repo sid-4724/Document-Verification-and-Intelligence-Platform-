@@ -1,0 +1,322 @@
+[
+  {
+    "split": "validation",
+    "label": "purchase_order",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "validation",
+    "label": "purchase_order",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "validation",
+    "label": "purchase_order",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "validation",
+    "label": "purchase_order",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "validation",
+    "label": "quotation",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "validation",
+    "label": "quotation",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "validation",
+    "label": "quotation",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "validation",
+    "label": "quotation",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "validation",
+    "label": "invoice",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "validation",
+    "label": "invoice",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "validation",
+    "label": "invoice",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "validation",
+    "label": "invoice",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "validation",
+    "label": "unknown",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "validation",
+    "label": "unknown",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "validation",
+    "label": "unknown",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "validation",
+    "label": "unknown",
+    "text": "CUSTOMER COPY\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 4\nFictional customer Rowan 4\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 6. Reference R-304."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 5\nFictional customer Rowan 5\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 7. Reference R-305."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 6\nFictional customer Rowan 6\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 8. Reference R-306."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 7\nFictional customer Rowan 7\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 9. Reference R-307."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 8\nFictional customer Rowan 8\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 10. Reference R-308."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 9\nFictional customer Rowan 9\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 11. Reference R-309."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 10\nFictional customer Rowan 10\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 12. Reference R-310."
+  },
+  {
+    "split": "test",
+    "label": "purchase_order",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 11\nFictional customer Rowan 11\nPlease supply the listed goods. This authorizes procurement.\nGoods: packing materials. Units: 13. Reference R-311."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 4\nFictional customer Rowan 4\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 6. Reference R-304."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 5\nFictional customer Rowan 5\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 7. Reference R-305."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 6\nFictional customer Rowan 6\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 8. Reference R-306."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 7\nFictional customer Rowan 7\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 9. Reference R-307."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 8\nFictional customer Rowan 8\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 10. Reference R-308."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 9\nFictional customer Rowan 9\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 11. Reference R-309."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 10\nFictional customer Rowan 10\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 12. Reference R-310."
+  },
+  {
+    "split": "test",
+    "label": "quotation",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 11\nFictional customer Rowan 11\nWe offer these rates subject to your acceptance. Prices valid for thirty days.\nGoods: packing materials. Units: 13. Reference R-311."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 4\nFictional customer Rowan 4\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 6. Reference R-304."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 5\nFictional customer Rowan 5\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 7. Reference R-305."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 6\nFictional customer Rowan 6\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 8. Reference R-306."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 7\nFictional customer Rowan 7\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 9. Reference R-307."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 8\nFictional customer Rowan 8\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 10. Reference R-308."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 9\nFictional customer Rowan 9\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 11. Reference R-309."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 10\nFictional customer Rowan 10\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 12. Reference R-310."
+  },
+  {
+    "split": "test",
+    "label": "invoice",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 11\nFictional customer Rowan 11\nPayment for delivered goods is due in 30 days. Please settle the billed amount.\nGoods: packing materials. Units: 13. Reference R-311."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 0\nFictional customer Rowan 0\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 2. Reference R-300."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 1\nFictional customer Rowan 1\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 3. Reference R-301."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 2\nFictional customer Rowan 2\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 4. Reference R-302."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 3\nFictional customer Rowan 3\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 5. Reference R-303."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 4\nFictional customer Rowan 4\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 6. Reference R-304."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 5\nFictional customer Rowan 5\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 7. Reference R-305."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 6\nFictional customer Rowan 6\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 8. Reference R-306."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 7\nFictional customer Rowan 7\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 9. Reference R-307."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 8\nFictional customer Rowan 8\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 10. Reference R-308."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 9\nFictional customer Rowan 9\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 11. Reference R-309."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 10\nFictional customer Rowan 10\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 12. Reference R-310."
+  },
+  {
+    "split": "test",
+    "label": "unknown",
+    "text": "TRANSACTION RECORD\nFictional supplier Lakeview 11\nFictional customer Rowan 11\nDelivery acknowledgment: packages received. This receipt gives no price or authorization.\nGoods: packing materials. Units: 13. Reference R-311."
+  }
+]

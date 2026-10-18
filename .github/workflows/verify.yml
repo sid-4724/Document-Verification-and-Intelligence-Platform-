@@ -1,0 +1,49 @@
+name: Verify DocVerify
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: docverify_test
+          POSTGRES_USER: docverify
+          POSTGRES_PASSWORD: ci_disposable_database
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd="pg_isready -U docverify -d docverify_test"
+          --health-interval=5s --health-timeout=5s --health-retries=12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: python -m pip install -r backend/requirements.lock
+      - run: npm --prefix frontend ci
+      - run: python scripts/verify.py
+      - name: Disposable PostgreSQL tests
+        env:
+          DATABASE_URL: sqlite:///./var/docverify.db
+          TEST_DATABASE_URL: postgresql+psycopg://docverify:ci_disposable_database@localhost:5432/docverify_test
+          DOCVERIFY_ALLOW_EXTERNAL_TEST_DB: "1"
+        run: python -m pytest -q
+      - run: cd frontend && npx playwright install --with-deps chromium
+      - name: Native browser regressions
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: |
+          python scripts/dev.py > /tmp/docverify-dev.log 2>&1 &
+          service_pid=$!
+          trap 'kill -TERM "$service_pid"' EXIT
+          for attempt in $(seq 1 60); do
+            if curl -fsS http://localhost:3000/api/health; then break; fi
+            sleep 1
+          done
+          cd frontend
+          npm run test:e2e

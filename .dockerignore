@@ -1,0 +1,12 @@
+.venv
+.git
+var
+**/__pycache__
+frontend/node_modules
+frontend/.next
+frontend/test-results
+frontend/playwright-report
+evaluation/models
+.env
+.pytest_cache
+.ruff_cache

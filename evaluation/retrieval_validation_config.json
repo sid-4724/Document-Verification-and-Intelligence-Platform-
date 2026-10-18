@@ -1,0 +1,6 @@
+{
+  "keyword_min_score": 0.035,
+  "selected_from": "validation_cable, validation_bolt only",
+  "objective": "support passage coverage; fewer unsupported evidence hits; recall; stable default tie",
+  "chunking": "page-lines-700-overlap2-v1"
+}

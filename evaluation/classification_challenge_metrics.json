@@ -1,0 +1,67 @@
+{
+  "synthetic_only": true,
+  "labels": [
+    "purchase_order",
+    "quotation",
+    "invoice",
+    "unknown"
+  ],
+  "validation_size": 16,
+  "test_size": 48,
+  "model": "existing heading-weighted TF-IDF + logistic regression; no challenge tuning",
+  "macro_f1": 0.6666666666666666,
+  "keyword_macro_f1": 0.1,
+  "confusion_matrix": [
+    [
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      12,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      12,
+      0,
+      0
+    ]
+  ],
+  "keyword_confusion_matrix": [
+    [
+      0,
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      0,
+      0,
+      12
+    ],
+    [
+      0,
+      0,
+      0,
+      12
+    ]
+  ],
+  "limitation": "Repeated synthetic intents still make this small challenge artificial. The trained classifier has no unknown-class detector and cannot emit unknown."
+}
